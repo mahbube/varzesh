@@ -2,6 +2,8 @@ options -indexes
 
 RewriteEngine On
 
+RewriteRule ^(internal)/(news|menu)/([0-9]+)/.*\.(html|htm)$ index.php?req=$1&type=$2&id=$3&ttl=$4 [L,NC,T=text/html]
+
 RewriteRule ^([0-9a-z_.-]+)\.(css|js|less)$ index.php?req=file&filename=$1&filetype=$2 [NC,L]
 
 RewriteRule ^(.+)\.html$ index.php?req=$1 [L]

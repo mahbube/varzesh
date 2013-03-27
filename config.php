@@ -11,7 +11,7 @@ define('SITE_PATH','/varzesh/');
 define('DB_SERVER','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
-define('DB_NAME','greenweb_test');
+define('DB_NAME','varzesh');
 
 $caching_enabled =false;
 $gzip_enabled = false;
